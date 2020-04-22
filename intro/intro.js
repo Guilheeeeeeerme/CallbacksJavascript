@@ -24,3 +24,38 @@ var umaFuncaoQueDizOi = function(){
 
 umaFuncaoQueDizOi();
 // output: Sou a função que diz Oi !!!
+
+/**
+ * Assim como qualquer função em qualquer linguagem de programação
+ * é possivel passar parametros
+ */
+
+ var umaFuncaoQueFazSoma = function (a, b) {
+    return a + b;
+ }
+
+ console.log(umaFuncaoQueFazSoma(68, 55));
+ // Output: 123 (68 + 55)
+
+
+/**
+ * Função como parametros
+ */
+
+ var funcaoA = function(callback) {
+    console.log("Estou usando a função A");
+    callback();
+ }
+
+ var funcaoB = function() {
+    console.log("Estou usando a função B");
+ }
+
+ funcaoA(funcaoB);
+ // Estou usando a função A
+ // Estou usando a função B
+
+
+
+
+
